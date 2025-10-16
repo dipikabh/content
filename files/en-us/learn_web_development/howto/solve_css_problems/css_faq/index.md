@@ -266,7 +266,7 @@ border-block-end-color: navy;
 ```
 
 > [!NOTE]
-> See the [Mozilla CSS Extensions](/en-US/docs/Web/CSS/Mozilla_Extensions) and [WebKit CSS Extensions](/en-US/docs/Web/CSS/WebKit_Extensions) for lists of browser-prefixed CSS properties.
+> See the [Mozilla CSS Extensions](/en-US/docs/Web/CSS/Reference/Vendor_prefixed/Mozilla) and [WebKit CSS Extensions](/en-US/docs/Web/CSS/Reference/Vendor_prefixed/WebKit) for lists of browser-prefixed CSS properties.
 
 ## How does z-index relate to positioning?
 
