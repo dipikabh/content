@@ -84,7 +84,7 @@ The `calc()` function must stand in place of a full CSS value of one of the foll
 - {{cssxref("&lt;frequency&gt;")}}
 - {{cssxref("&lt;angle&gt;")}}
 - {{cssxref("&lt;time&gt;")}}
-- {{cssxref("flex_value", "&lt;flex&gt;")}}
+- {{cssxref("flex", "&lt;flex&gt;")}}
 - {{cssxref("&lt;resolution&gt;")}}
 - {{cssxref("&lt;percentage&gt;")}}
 - {{cssxref("&lt;number&gt;")}}

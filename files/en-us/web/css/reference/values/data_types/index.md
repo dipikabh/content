@@ -175,7 +175,7 @@ The [CSS shapes](/en-US/docs/Web/CSS/CSS_shapes) and [CSS borders and box decora
 - {{cssxref("display-outside")}}
 - {{cssxref("easing-function")}}
 - {{cssxref("filter-function")}}
-- {{cssxref("flex_value", "&lt;flex&gt;")}}
+- {{cssxref("flex", "&lt;flex&gt;")}}
 - {{cssxref("frequency")}}
 - {{cssxref("frequency-percentage")}}
 - {{cssxref("generic-family")}}
