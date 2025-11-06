@@ -195,7 +195,7 @@ The [CSS shapes](/en-US/docs/Web/CSS/CSS_shapes) and [CSS borders and box decora
 - {{cssxref("overflow-position")}}
 - {{cssxref("percentage")}}
 - {{cssxref("position", "&lt;position&gt;")}}
-- {{cssxref("position-area_value", "&lt;position-area&gt;")}}
+- {{cssxref("position-area", "&lt;position-area&gt;")}}
 - {{cssxref("ratio")}}
 - {{cssxref("relative-size")}}
 - {{cssxref("resolution")}}
