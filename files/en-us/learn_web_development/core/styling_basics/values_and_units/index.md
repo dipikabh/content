@@ -43,9 +43,9 @@ In this lesson, we will take a look at some of the most frequently used value ty
 
 CSS values define what types of value are valid for each CSS property. For example, you can specify colors for the values of {{cssxref("color")}} or {{cssxref("border-color")}}, but not lengths or percentages.
 
-In CSS specifications, and on the property pages here on MDN, you will be able to spot value types as they will be surrounded by angle brackets (`<`, `>`) — such as [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value) or {{cssxref("length")}}. When you see the value type `<color>` as valid for a particular property, that means you can use any valid color as a value for that property, as listed on the [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value) reference page.
+In CSS specifications, and on the property pages here on MDN, you will be able to spot value types as they will be surrounded by angle brackets (`<`, `>`) — such as [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color) or {{cssxref("length")}}. When you see the value type `<color>` as valid for a particular property, that means you can use any valid color as a value for that property, as listed on the [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color) reference page.
 
-Sometimes value types and properties can have the same, or similar names — For example, there is a {{cssxref("color")}} property and a [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value) data type. You can use the angle brackets to determine which one you are studying in each case. HTML elements also use angle brackets, but it should be clear from the context which one you are looking at. If you are not sure, try searching for it on MDN.
+Sometimes value types and properties can have the same, or similar names — For example, there is a {{cssxref("color")}} property and a [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color) data type. You can use the angle brackets to determine which one you are studying in each case. HTML elements also use angle brackets, but it should be clear from the context which one you are looking at. If you are not sure, try searching for it on MDN.
 
 > [!NOTE]
 > You'll see CSS value types referred to as _data types_. The terms are basically interchangeable — when you see something in CSS referred to as a data type, it is really just a fancy way of saying value type. The term _value_ refers to any particular expression supported by a value type that you choose to use.
@@ -59,7 +59,7 @@ h1 {
 }
 ```
 
-A value type in CSS defines a collection of allowable values. This means that if you see `<color>` as valid you don't need to wonder which of the different types of color value can be used — keywords, hex values, `rgb()` functions, etc. You can use _any_ available `<color>` values, assuming they are supported by your browser. The page on MDN for each value will give you information about browser support. For example, if you look at the page for [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value) you will see that the browser compatibility section lists different types of color values and support for them.
+A value type in CSS defines a collection of allowable values. This means that if you see `<color>` as valid you don't need to wonder which of the different types of color value can be used — keywords, hex values, `rgb()` functions, etc. You can use _any_ available `<color>` values, assuming they are supported by your browser. The page on MDN for each value will give you information about browser support. For example, if you look at the page for [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color) you will see that the browser compatibility section lists different types of color values and support for them.
 
 Let's have a look at some of the types of values and units you may frequently encounter, with examples so that you can try out different possible values.
 
@@ -472,7 +472,7 @@ In the next example, try changing the values to see how the colors vary:
 
 ### RGB values
 
-To create RGB values directly, the [`rgb()`](/en-US/docs/Web/CSS/Reference/Values/color_value/rgb) function takes three parameters representing **red**, **green**, and **blue** channel values of the colors, with an optional fourth value separated by a slash (`/`) representing opacity, in much the same way as hex values. The difference with RGB is that each channel is represented not by two hex digits, but by a decimal number ranging from `0` and `255` or a percentage ranging from `0%` and `100%` (but not a mixture of the two).
+To create RGB values directly, the [`rgb()`](/en-US/docs/Web/CSS/Reference/Values/color/rgb) function takes three parameters representing **red**, **green**, and **blue** channel values of the colors, with an optional fourth value separated by a slash (`/`) representing opacity, in much the same way as hex values. The difference with RGB is that each channel is represented not by two hex digits, but by a decimal number ranging from `0` and `255` or a percentage ranging from `0%` and `100%` (but not a mixture of the two).
 
 Let's rewrite our last example to use RGB colors:
 
@@ -555,13 +555,13 @@ If you want to go beyond keywords, hexadecimal, and `rgb()` for colors, you migh
 Hue is the value type that allows us to tell the difference or similarity between colors like red, orange, yellow, green, blue, etc.
 The key concept is that you can specify a hue in an [`<angle>`](/en-US/docs/Web/CSS/Reference/Values/angle) because most of the color models describe hues using a {{glossary("color wheel")}}.
 
-There are several color functions that include a [`<hue>`](/en-US/docs/Web/CSS/Reference/Values/hue) component, including `hsl()`, `hwb()`, and [`lch()`](/en-US/docs/Web/CSS/Reference/Values/color_value/lch). Other color functions, like [`lab()`](/en-US/docs/Web/CSS/Reference/Values/color_value/lab), define colors based on what humans can see.
+There are several color functions that include a [`<hue>`](/en-US/docs/Web/CSS/Reference/Values/hue) component, including `hsl()`, `hwb()`, and [`lch()`](/en-US/docs/Web/CSS/Reference/Values/color/lch). Other color functions, like [`lab()`](/en-US/docs/Web/CSS/Reference/Values/color/lab), define colors based on what humans can see.
 
-If you want to find out more about these functions and color spaces, see the [Applying color to HTML elements using CSS](/en-US/docs/Web/CSS/CSS_colors/Applying_color) guide, the [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value) reference that lists all the different ways you can use colors in CSS, and the [CSS color module](/en-US/docs/Web/CSS/CSS_colors) that provides an overview of all the color types in CSS and the properties that use color values.
+If you want to find out more about these functions and color spaces, see the [Applying color to HTML elements using CSS](/en-US/docs/Web/CSS/CSS_colors/Applying_color) guide, the [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color) reference that lists all the different ways you can use colors in CSS, and the [CSS color module](/en-US/docs/Web/CSS/CSS_colors) that provides an overview of all the color types in CSS and the properties that use color values.
 
 ### HWB
 
-A great starting point for using hues in CSS is the [`hwb()`](/en-US/docs/Web/CSS/Reference/Values/color_value/hwb) function, which specifies an `srgb()` color.
+A great starting point for using hues in CSS is the [`hwb()`](/en-US/docs/Web/CSS/Reference/Values/color/hwb) function, which specifies an `srgb()` color.
 The three parts are:
 
 - **Hue**: The base shade of the color. This takes a [`<hue>`](/en-US/docs/Web/CSS/Reference/Values/hue) value between `0` and `360`, representing the angles around a color wheel.
@@ -570,7 +570,7 @@ The three parts are:
 
 ### HSL
 
-Similar to the `hwb()` function is the [`hsl()`](/en-US/docs/Web/CSS/Reference/Values/color_value/hsl) function, which also specifies an `srgb()` color.
+Similar to the `hwb()` function is the [`hsl()`](/en-US/docs/Web/CSS/Reference/Values/color/hsl) function, which also specifies an `srgb()` color.
 HSL uses `Hue`, in addition to `Saturation` and `Lightness`:
 
 - **Hue**: Again, this represents the base shade of the color.
@@ -691,7 +691,7 @@ You'll learn about image values in more depth in our [Background and borders](/e
 
 ## Position
 
-The [`<position>`](/en-US/docs/Web/CSS/Reference/Values/position_value) value type represents a set of 2D coordinates, used to position an item such as a background image (via [`background-position`](/en-US/docs/Web/CSS/Reference/Properties/background-position)). It can take keywords such as `top`, `left`, `bottom`, `right`, and `center` to align items with specific bounds of a 2D box, and lengths, which represent offsets from the top and left-hand edges of the box.
+The [`<position>`](/en-US/docs/Web/CSS/Reference/Values/position) value type represents a set of 2D coordinates, used to position an item such as a background image (via [`background-position`](/en-US/docs/Web/CSS/Reference/Properties/background-position)). It can take keywords such as `top`, `left`, `bottom`, `right`, and `center` to align items with specific bounds of a 2D box, and lengths, which represent offsets from the top and left-hand edges of the box.
 
 A typical position value consists of two values — the first sets the position horizontally, the second vertically. If you only specify values for one axis the other will default to `center`.
 
@@ -751,7 +751,7 @@ Functions are useful because you can write code once then reuse it many times in
 Most programming languages not only support functions but also come with convenient built-in functions for common tasks so you don't have to write them yourself from scratch.
 
 CSS also has [functions](/en-US/docs/Web/CSS/Reference/Values/Functions), which work in a similar way to functions in other languages.
-In fact, we've already seen CSS functions in the [Color](#color) section above, such as [`rgb()`](/en-US/docs/Web/CSS/Reference/Values/color_value/rgb) and [`hsl()`](/en-US/docs/Web/CSS/Reference/Values/color_value/hsl).
+In fact, we've already seen CSS functions in the [Color](#color) section above, such as [`rgb()`](/en-US/docs/Web/CSS/Reference/Values/color/rgb) and [`hsl()`](/en-US/docs/Web/CSS/Reference/Values/color/hsl).
 
 Aside from applying colors, you can use functions in CSS to do a lot of other things.
 For example, [Transform functions](/en-US/docs/Web/CSS/Reference/Values/Functions#transform_functions) are a common way to move, rotate, and scale elements on a page.

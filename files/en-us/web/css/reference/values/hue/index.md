@@ -12,7 +12,7 @@ sidebar: cssref
 ---
 
 The **`<hue>`** [CSS](/en-US/docs/Web/CSS) [data type](/en-US/docs/Web/CSS/Reference/Values/Data_types) represents the hue angle of a color.
-It is used in the color functions that accept hue expressed as a single value, specifically [`hsl()`](/en-US/docs/Web/CSS/Reference/Values/color_value/hsl), [`hwb()`](/en-US/docs/Web/CSS/Reference/Values/color_value/hwb), [`lch()`](/en-US/docs/Web/CSS/Reference/Values/color_value/lch), and [`oklch()`](/en-US/docs/Web/CSS/Reference/Values/color_value/oklch) functional notations.
+It is used in the color functions that accept hue expressed as a single value, specifically [`hsl()`](/en-US/docs/Web/CSS/Reference/Values/color/hsl), [`hwb()`](/en-US/docs/Web/CSS/Reference/Values/color/hwb), [`lch()`](/en-US/docs/Web/CSS/Reference/Values/color/lch), and [`oklch()`](/en-US/docs/Web/CSS/Reference/Values/color/oklch) functional notations.
 
 ## Syntax
 
@@ -132,7 +132,7 @@ The following table lists typical colors at various angles in the sRGB (used by 
 
 ### Changing the hue of a color using a slider
 
-The following example shows the effect of changing the `hue` value of the [`hsl()`](/en-US/docs/Web/CSS/Reference/Values/color_value/hsl) functional notation on a color.
+The following example shows the effect of changing the `hue` value of the [`hsl()`](/en-US/docs/Web/CSS/Reference/Values/color/hsl) functional notation on a color.
 
 #### HTML
 
@@ -245,5 +245,5 @@ div {
 
 ## See also
 
-- [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value)
+- [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color)
 - {{CSSXref("&lt;hue-interpolation-method&gt;")}}

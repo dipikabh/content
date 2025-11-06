@@ -21,6 +21,6 @@ In JavaScript, the term "[interpolation](/en-US/docs/Web/JavaScript/Reference/Te
 - {{CSSXref("color-interpolation-method")}} CSS data type
 - {{CSSXref("hue-interpolation-method")}} CSS data type
 - {{CSSXref("color_value/color-mix", "color-mix()")}} CSS function
-- [Interpolating colors in CSS](/en-US/docs/Web/CSS/Reference/Values/color_value#interpolation)
+- [Interpolating colors in CSS](/en-US/docs/Web/CSS/Reference/Values/color#interpolation)
 - [Interpolation](https://en.wikipedia.org/wiki/Interpolation) on Wikipedia
 - [String interpolation](https://en.wikipedia.org/wiki/String_interpolation) on Wikipedia

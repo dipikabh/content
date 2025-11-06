@@ -47,7 +47,7 @@ h6 {
 
 ### Using with @color-profile
 
-When `<dashed-ident>` is used with the [@color-profile](/en-US/docs/Web/CSS/Reference/At-rules/@color-profile) at-rule, the at-rule is declared first and then used within a [CSS color() function](/en-US/docs/Web/CSS/Reference/Values/color_value/color).
+When `<dashed-ident>` is used with the [@color-profile](/en-US/docs/Web/CSS/Reference/At-rules/@color-profile) at-rule, the at-rule is declared first and then used within a [CSS color() function](/en-US/docs/Web/CSS/Reference/Values/color/color).
 
 ```css
 @color-profile --my-color-profile {

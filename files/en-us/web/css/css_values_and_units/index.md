@@ -231,7 +231,7 @@ The CSS values and units module also introduces the [`<frequency>`](/en-US/docs/
 - [CSS colors](/en-US/docs/Web/CSS/CSS_colors) module
   - {{cssxref("&lt;color&gt;")}}
   - {{cssxref("system-color")}}
-  - [`color-mix()`](/en-US/docs/Web/CSS/Reference/Values/color_value/color-mix)
+  - [`color-mix()`](/en-US/docs/Web/CSS/Reference/Values/color/color-mix)
 
 - [CSS images](/en-US/docs/Web/CSS/CSS_images) module
   - {{cssxref("&lt;image&gt;")}}

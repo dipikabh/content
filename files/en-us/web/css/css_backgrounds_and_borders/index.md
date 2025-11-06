@@ -173,7 +173,7 @@ The CSS backgrounds module level 4 also introduces the `background-position-bloc
 - {{cssxref("url")}} data type
 - {{cssxref("image")}} data type
 - {{cssxref("position")}} data type
-- [`currentColor`](/en-US/docs/Web/CSS/Reference/Values/color_value#currentcolor_keyword) keyword
+- [`currentColor`](/en-US/docs/Web/CSS/Reference/Values/color#currentcolor_keyword) keyword
 
 ## Specifications
 

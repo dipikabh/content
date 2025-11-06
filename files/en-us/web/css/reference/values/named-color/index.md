@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`<named-color>`** [CSS](/en-US/docs/Web/CSS) [data type](/en-US/docs/Web/CSS/Reference/Values/Data_types) is the name of a color, such as `red`, `blue`, `black`, or `lightseagreen`. Syntactically, a `<named-color>` is an [`<ident>`](/en-US/docs/Web/CSS/Reference/Values/ident).
 
-A `<named-color>` value can be used anywhere a [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value) can be used.
+A `<named-color>` value can be used anywhere a [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color) can be used.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ color: transparent;
 
 ### Value
 
-Named colors consists of standard colors, the [`transparent`](#transparent) and [`currentColor`](/en-US/docs/Web/CSS/Reference/Values/color_value#currentcolor_keyword) keywords.
+Named colors consists of standard colors, the [`transparent`](#transparent) and [`currentColor`](/en-US/docs/Web/CSS/Reference/Values/color#currentcolor_keyword) keywords.
 
 #### Standard colors
 
@@ -976,4 +976,4 @@ Though many keywords have been adapted from [X11](https://en.wikipedia.org/wiki/
 
 ## See also
 
-- [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value): the data type of whose definition `<named-color>` is a constituent part.
+- [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color): the data type of whose definition `<named-color>` is a constituent part.

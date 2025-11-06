@@ -189,7 +189,7 @@ div {
 }
 ```
 
-In this example for interpolation, [hsl](/en-US/docs/Web/CSS/Reference/Values/color_value/hsl) color system is being used and [hue](/en-US/docs/Web/CSS/Reference/Values/hue) is being interpolated.
+In this example for interpolation, [hsl](/en-US/docs/Web/CSS/Reference/Values/color/hsl) color system is being used and [hue](/en-US/docs/Web/CSS/Reference/Values/hue) is being interpolated.
 
 ```css
 .shorter {

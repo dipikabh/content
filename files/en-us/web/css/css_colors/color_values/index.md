@@ -20,7 +20,7 @@ The web defines a set of standard color names that lets you use keywords instead
 
 Color keywords include standard primary and secondary colors (such as `red`, `blue`, or `orange`), shades of gray (from `black` to `white`, including colors like `darkgray` and `lightgrey`), and a variety of other blended colors, including `lightseagreen`, `cornflowerblue`, and `rebeccapurple`. Named colors use the [RGB](/en-US/docs/Glossary/RGB) model and are associated with the sRGB (`srgb`) color space.
 
-There are over 160 named colors. There are named colors of special interest: [`transparent`](/en-US/docs/Web/CSS/Reference/Values/named-color#transparent) sets a transparent color value, while [`currentColor`](/en-US/docs/Web/CSS/Reference/Values/color_value#currentcolor_keyword) sets the current value of the CSS {{cssxref("color")}} property. There are also named {{cssxref("system-color")}} colors, such as `accentcolortext` and `buttonface`, that reflect the default color choices made by the user, the browser, or the operating system.
+There are over 160 named colors. There are named colors of special interest: [`transparent`](/en-US/docs/Web/CSS/Reference/Values/named-color#transparent) sets a transparent color value, while [`currentColor`](/en-US/docs/Web/CSS/Reference/Values/color#currentcolor_keyword) sets the current value of the CSS {{cssxref("color")}} property. There are also named {{cssxref("system-color")}} colors, such as `accentcolortext` and `buttonface`, that reflect the default color choices made by the user, the browser, or the operating system.
 
 All color keywords are case-insensitive. See the {{cssxref("named-color")}} data type for more information on color keywords.
 
@@ -228,7 +228,7 @@ The last value is semi-opaque; it includes the optional alpha value, preceded by
 
 ### HWB functional notation
 
-The [`hwb()`](/en-US/docs/Web/CSS/Reference/Values/color_value/hwb) color function uses the same hue coordinate system as `hsl()`, with `0deg` being red. However, instead of `hsl()`'s lightness and saturation, `hwb()` functions specify whiteness (`W`) and blackness (`B`). This function is also fairly intuitive — allowing you to pick a hue and then mix in amounts of white and or black to achieve the desired color.
+The [`hwb()`](/en-US/docs/Web/CSS/Reference/Values/color/hwb) color function uses the same hue coordinate system as `hsl()`, with `0deg` being red. However, instead of `hsl()`'s lightness and saturation, `hwb()` functions specify whiteness (`W`) and blackness (`B`). This function is also fairly intuitive — allowing you to pick a hue and then mix in amounts of white and or black to achieve the desired color.
 
 `W` and `B` values range from `0%` to `100%` (or `0` to `1`). If the combined value of `W` and `B` is 100% (or `1`) or greater, the color will be grey, similar to setting the `s` to `0%` with `hsl()`. As with `hsl()`, an optional alpha value can be included, preceded by a forward slash `/`.
 
@@ -316,7 +316,7 @@ While `hsl()` and `hwb()` are intuitive, they have a major drawback. With these 
 
 Wouldn't it be fantastic if you could simply change the hue channel of a color on a site without making text illegible? You can with color functions in the CIELAB and Oklab color spaces.
 
-The CIELAB and Oklab color spaces represent the entire range of colors that humans can see. CIE Lab color functions include [`lch()`](/en-US/docs/Web/CSS/Reference/Values/color_value/lch) and [`lab()`](/en-US/docs/Web/CSS/Reference/Values/color_value/lab). Oklab color functions include [`oklch()`](/en-US/docs/Web/CSS/Reference/Values/color_value/oklch) and [`oklab()`](/en-US/docs/Web/CSS/Reference/Values/color_value/oklab). The primary purpose of these models is that they are uniform so that a given distance between any two points in the color space should appear equally different to a viewer. Oklab is a color space that uses the same model type as CIELAB but is built using additional numerical optimization steps, so the values are considered more accurate than CIELAB. Because of this optimization, hues are more perceptually uniform.
+The CIELAB and Oklab color spaces represent the entire range of colors that humans can see. CIE Lab color functions include [`lch()`](/en-US/docs/Web/CSS/Reference/Values/color/lch) and [`lab()`](/en-US/docs/Web/CSS/Reference/Values/color/lab). Oklab color functions include [`oklch()`](/en-US/docs/Web/CSS/Reference/Values/color/oklch) and [`oklab()`](/en-US/docs/Web/CSS/Reference/Values/color/oklab). The primary purpose of these models is that they are uniform so that a given distance between any two points in the color space should appear equally different to a viewer. Oklab is a color space that uses the same model type as CIELAB but is built using additional numerical optimization steps, so the values are considered more accurate than CIELAB. Because of this optimization, hues are more perceptually uniform.
 
 The `lch()` and `oklch()` functions use lightness (`L`), chroma (`C`), and hue (`H`), and are discussed further in this section. The [`lab()` and `oklab()`](#lab_and_oklab) functions work differently, using lightness (`L`), red/green-ness (along the `a`-axis), and yellow/blue-ness (along the `b`-axis). These axes are referred to as rectangular coordinates. The main benefit of these color functions is that the "lightness" is perceived lightness; it is the brightness of a color as perceived by the human eye rather than the lightness as compared to other colors.
 
@@ -441,7 +441,7 @@ for (let l = 0; l <= 100; l += 10) {
 
 ## Lab and OKLab
 
-The [`lab()`](/en-US/docs/Web/CSS/Reference/Values/color_value/lab) functional notation expresses a given color in the CIE L\*a\*b\* color space. The [`oklab()`](/en-US/docs/Web/CSS/Reference/Values/color_value/oklab) function defines colors in the OKLab color space. These functions represent the entire range of colors that humans can see by specifying the color's lightness (`L`), a red/green axis value (`a`), a blue/yellow axis value (`b`), and an optional alpha transparency value.
+The [`lab()`](/en-US/docs/Web/CSS/Reference/Values/color/lab) functional notation expresses a given color in the CIE L\*a\*b\* color space. The [`oklab()`](/en-US/docs/Web/CSS/Reference/Values/color/oklab) function defines colors in the OKLab color space. These functions represent the entire range of colors that humans can see by specifying the color's lightness (`L`), a red/green axis value (`a`), a blue/yellow axis value (`b`), and an optional alpha transparency value.
 
 Similar to `lch()` and `oklch()`, the `lightness` is either:
 
@@ -498,7 +498,7 @@ for (let b = -4; b <= 4; b++) {
 
 ### The `color()` function
 
-If you want explicit control over color spaces when defining colors, you can use the [`color()`](/en-US/docs/Web/CSS/Reference/Values/color_value/color) function.
+If you want explicit control over color spaces when defining colors, you can use the [`color()`](/en-US/docs/Web/CSS/Reference/Values/color/color) function.
 
 This is useful to describe a color for high-definition devices with wider color [gamuts](/en-US/docs/Glossary/Gamut).
 For example, if you wanted to show the `display-p3 0 0 1` color, which is outside of the sRGB gamut, you could use a `@media` [`color-gamut`](/en-US/docs/Web/CSS/Reference/At-rules/@media/color-gamut) at-rule to detect if the client's hardware supports colors in this range before trying to use it:
@@ -518,7 +518,7 @@ For example, if you wanted to show the `display-p3 0 0 1` color, which is outsid
 
 Understanding `color()` is important when it comes to relative colors, discussed next. The older sRGB color notations discussed above — `hsl()`, `hwb()`, and `rgb()`— do not express the full spectrum of visible colors, while the `color()` function supports a much wider color gamut. As a result, when using the older functions types to define relative colors, the output color returned by querying {{domxref("HTMLElement.style")}} property or the {{domxref("CSSStyleDeclaration.getPropertyValue()")}} method will be a `color(srgb ...)` value.
 
-To see an example of converting the `rgb()`, `hsl()`, `hwb()`, and other [color formats](/en-US/docs/Web/CSS/Reference/Values/color_value), check out our [color format converter tool](/en-US/docs/Web/CSS/CSS_colors/Color_format_converter).
+To see an example of converting the `rgb()`, `hsl()`, `hwb()`, and other [color formats](/en-US/docs/Web/CSS/Reference/Values/color), check out our [color format converter tool](/en-US/docs/Web/CSS/CSS_colors/Color_format_converter).
 
 ### Relative colors
 

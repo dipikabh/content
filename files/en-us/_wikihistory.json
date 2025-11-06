@@ -88309,7 +88309,7 @@
       "estelle"
     ]
   },
-  "Web/CSS/Reference/Values/color_value": {
+  "Web/CSS/Reference/Values/color": {
     "modified": "2020-12-01T13:24:01.277Z",
     "contributors": [
       "mfluehr",
@@ -88733,7 +88733,7 @@
     "modified": "2020-11-27T16:21:05.359Z",
     "contributors": ["rachelandrew", "chrisdavidmills", "escattone"]
   },
-  "Web/CSS/Reference/Values/flex_value": {
+  "Web/CSS/Reference/Values/flex": {
     "modified": "2020-10-15T21:50:01.854Z",
     "contributors": [
       "rachelandrew",
@@ -89341,7 +89341,7 @@
       "BijuGC"
     ]
   },
-  "Web/CSS/Reference/Values/position_value": {
+  "Web/CSS/Reference/Values/position": {
     "modified": "2020-10-15T21:19:10.360Z",
     "contributors": [
       "mfuji09",

@@ -222,7 +222,7 @@ The CSS borders and box decorations module level 4 also introduces the `border-s
 - [`<color>`](/en-US/docs/Web/CSS/Reference/Properties/color) data type
 - [`<image>`](/en-US/docs/Web/CSS/Reference/Values/image) data type
 - [`<position>`](/en-US/docs/Web/CSS/Reference/Properties/position) data type
-- [`currentColor`](/en-US/docs/Web/CSS/Reference/Values/color_value#currentcolor_keyword) keyword
+- [`currentColor`](/en-US/docs/Web/CSS/Reference/Values/color#currentcolor_keyword) keyword
 
 [CSS backgrounds and borders](/en-US/docs/Web/CSS/CSS_backgrounds_and_borders) module
 

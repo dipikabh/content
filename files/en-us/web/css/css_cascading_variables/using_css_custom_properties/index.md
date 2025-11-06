@@ -52,7 +52,7 @@ This doesn't always have to be the case: you maybe have a good reason for limiti
 ### Using the `@property` at-rule
 
 The {{cssxref("@property")}} at-rule allows you to be more expressive with the definition of a custom property with the ability to associate a type with the property, set default values, and control inheritance.
-The following example creates a custom property called `--logo-color` which expects a [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value):
+The following example creates a custom property called `--logo-color` which expects a [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color):
 
 ```css
 @property --logo-color {
@@ -293,7 +293,7 @@ The property is only set for the matching selector and its descendants.
 
 The `@property` at-rule lets you explicitly state whether the property inherits or not.
 The following example creates a custom property using the `@property` at-rule.
-Inheritance is disabled, there's a [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value) data type defined, and an initial value of `teal`.
+Inheritance is disabled, there's a [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color) data type defined, and an initial value of `teal`.
 
 The parent element sets `--box-color` to a value of `green` and uses `--box-color` as a value for its background color.
 The child element also uses `background-color: var(--box-color)`, and we would expect it to have the color `green` if inheritance was enabled (or if it was defined using the double dash syntax).
@@ -390,7 +390,7 @@ In fact, we've already seen this in the [`@property` inheritance](#using_propert
 
 The following example sets an initial value of `--box-color` to `teal` using the `@property` at-rule.
 In the ruleset following the at-rule, we want to set `--box-color` to `pink`, but there's a typo in the value name.
-The same is true for the third `<div>` where we've used `2rem` for the custom property that's expecting a valid [`<color>` value](/en-US/docs/Web/CSS/Reference/Values/color_value).
+The same is true for the third `<div>` where we've used `2rem` for the custom property that's expecting a valid [`<color>` value](/en-US/docs/Web/CSS/Reference/Values/color).
 Both `2rem` and `peenk` are invalid color values, so the initial value of `teal` is applied:
 
 ```css live-sample___at-property-initial-value

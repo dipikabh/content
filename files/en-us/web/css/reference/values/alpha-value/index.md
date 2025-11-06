@@ -28,7 +28,7 @@ When animated, values of the `<alpha-value>` CSS data type are {{Glossary("inter
 
 ### Setting text color opacity
 
-The [`rgb()`](/en-US/docs/Web/CSS/Reference/Values/color_value/rgb) function accepts a fourth optional value to specify an alpha value.
+The [`rgb()`](/en-US/docs/Web/CSS/Reference/Values/color/rgb) function accepts a fourth optional value to specify an alpha value.
 The following example shows how to apply a color with 60% opacity using the alpha value:
 
 ```css
@@ -55,4 +55,4 @@ shape-image-threshold: 0.7;
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)
 - [CSS data types](/en-US/docs/Web/CSS/Reference/Values/Data_types)
 - [CSS Color](/en-US/docs/Web/CSS/CSS_colors)
-- [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color_value)
+- [`<color>`](/en-US/docs/Web/CSS/Reference/Values/color)
