@@ -183,7 +183,7 @@ The default reference box is the [`margin-box`](/en-US/docs/Web/CSS/Reference/Va
 The values in a `<basic-shape>` function are computed as specified, with the following additional considerations:
 
 - For any omitted values, their defaults are used.
-- A {{cssxref("position_value", "&lt;position&gt;")}} value in `circle()` or `ellipse()` is computed as a pair of offsets from the top left corner of the reference box: the first offset is horizontal, and the second is vertical. Each offset is specified as a {{cssxref("length-percentage")}} value.
+- A {{cssxref("position", "&lt;position&gt;")}} value in `circle()` or `ellipse()` is computed as a pair of offsets from the top left corner of the reference box: the first offset is horizontal, and the second is vertical. Each offset is specified as a {{cssxref("length-percentage")}} value.
 - A [`<border-radius>`](/en-US/docs/Web/CSS/Reference/Properties/border-radius) value in `inset()` is expanded into a list of eight values, each either a {{cssxref("length")}} or a {{cssxref("percentage")}}.
 - {{cssxref("basic-shape/inset","inset()")}}, {{cssxref("basic-shape/rect","rect()")}}, and {{cssxref("basic-shape/xywh","xywh()")}} functions compute to the equivalent `inset()` function.
 
