@@ -160,7 +160,7 @@ Alternatively, use the [`light-dark()`](/en-US/docs/Web/CSS/Reference/Values/col
 ## See also
 
 - [`prefers-color-scheme`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme) media query to detect user preferences for color schemes.
-- {{CSSXref("color_value/light-dark", "light-dark()")}} color function to set colors for both light and dark color schemes.
+- {{cssxref("color/light-dark", "light-dark()")}} color function to set colors for both light and dark color schemes.
 - Other color-related properties: {{cssxref("color")}}, {{cssxref("accent-color")}}, {{cssxref("background-color")}}, {{cssxref("border-color")}}, {{cssxref("outline-color")}}, {{cssxref("text-decoration-color")}}, {{cssxref("text-emphasis-color")}}, {{cssxref("text-shadow")}}, {{cssxref("caret-color")}}, and {{cssxref("column-rule-color")}}
 - {{cssxref("background-image")}}
 - {{cssxref("print-color-adjust")}}

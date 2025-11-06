@@ -86,7 +86,7 @@ SVG makes use of a number of data types. This article lists these types along wi
 - \<color>
   - : The basic type \<color> is a CSS2 compatible specification for a color in the sRGB color space. \<color> applies to SVG's use of the {{SVGAttr("color")}} attribute and is a component of the definitions of attributes {{SVGAttr("fill")}}, {{SVGAttr("stroke")}}, {{SVGAttr("stop-color")}}, {{SVGAttr("flood-color")}}, and {{SVGAttr("lighting-color")}}, which also offer optional ICC-based color specifications.
 
-    The definition of \<color> in SVG is exactly the same as the CSS {{cssxref("color_value", "&lt;color&gt;")}} definition.
+    The definition of \<color> in SVG is exactly the same as the CSS {{cssxref("color", "&lt;color&gt;")}} definition.
 
 ## Coordinate
 

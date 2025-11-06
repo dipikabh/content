@@ -35,7 +35,7 @@ The color wheel above shows hues at all angles in the [sRGB](https://en.wikipedi
 
 The angles corresponding to particular hues differ depending on the color space. For example, the hue angle of sRGB green is `120deg` in the sRGB color space, but `134.39deg` in the CIELAB color space.
 
-The following table lists typical colors at various angles in the sRGB (used by {{CSSXref("color_value/hsl", "hsl()")}} and {{CSSXref("color_value/hwb", "hwb()")}}), CIELAB (used by {{CSSXref("color_value/lch", "lch()")}}), and Oklab (used by {{CSSXref("color_value/oklch", "oklch()")}}) color spaces:
+The following table lists typical colors at various angles in the sRGB (used by {{cssxref("color/hsl", "hsl()")}} and {{cssxref("color/hwb", "hwb()")}}), CIELAB (used by {{cssxref("color/lch", "lch()")}}), and Oklab (used by {{cssxref("color/oklch", "oklch()")}}) color spaces:
 
 <table>
   <colgroup>

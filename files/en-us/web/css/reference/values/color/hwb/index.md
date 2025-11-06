@@ -60,7 +60,7 @@ hwb(from lch(40% 70 240deg) h w calc(b - 30))
 
 This color function in the [`sRGB` color space](/en-US/docs/Glossary/Color_space#srgb) is defined by a {{CSSXref("&lt;hue&gt;")}} angle value, a whiteness value, a blackness value, and, optionally, an alpha value representing the color's transparency.
 
-The angles corresponding to particular hues differ across the sRGB (used by {{CSSXref("color_value/hsl", "hsl()")}} and `hwb()`), CIELAB (used by {{CSSXref("color_value/lch", "lch()")}}), and Oklab (used by {{CSSXref("color_value/oklch", "oklch()")}}) color spaces. `hwb()` is in the same color space as `hsl()`, and therefore has the same hue color angles. See the {{CSSXref("&lt;hue&gt;")}} reference page for more detail and examples, or try changing the hues on the [color picker](/en-US/docs/Web/CSS/CSS_colors#colors_in_action) to see it in action.
+The angles corresponding to particular hues differ across the sRGB (used by {{cssxref("color/hsl", "hsl()")}} and `hwb()`), CIELAB (used by {{cssxref("color/lch", "lch()")}}), and Oklab (used by {{cssxref("color/oklch", "oklch()")}}) color spaces. `hwb()` is in the same color space as `hsl()`, and therefore has the same hue color angles. See the {{CSSXref("&lt;hue&gt;")}} reference page for more detail and examples, or try changing the hues on the [color picker](/en-US/docs/Web/CSS/CSS_colors#colors_in_action) to see it in action.
 
 An `hwb()` color is fully saturated when its whiteness (`W`) and blackness (`B`) values are both `0`. For any hue value `H`, `hwb(H 0% 0%)` is the same color as `hsl(H 100% 50%)`. Increasing the whiteness value lightens the color. Increasing the blackness darkens the color.
 
@@ -94,7 +94,7 @@ The parameters are as follows:
 > See [Missing color components](/en-US/docs/Web/CSS/Reference/Values/color#missing_color_components) for more information on the effect of `none`.
 
 > [!NOTE]
-> Absolute `hwb()` colors are serialized to {{CSSXref("color_value/rgb", "rgb()")}} values. The values of the red, green, and blue components may be rounded in serialization.
+> Absolute `hwb()` colors are serialized to {{cssxref("color/rgb", "rgb()")}} values. The values of the red, green, and blue components may be rounded in serialization.
 
 ### Relative value syntax
 

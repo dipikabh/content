@@ -25,7 +25,7 @@ You can use this attribute with the following SVG elements:
     <tr>
       <th scope="row">Value</th>
       <td>
-        {{cssxref("color_value", "&lt;color&gt;")}}
+        {{cssxref("color", "&lt;color&gt;")}}
       </td>
     </tr>
     <tr>

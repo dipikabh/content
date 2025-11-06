@@ -158,7 +158,7 @@ The [CSS shapes](/en-US/docs/Web/CSS/CSS_shapes) and [CSS borders and box decora
 - {{cssxref("box-edge")}}
 - {{cssxref("calc-keyword")}}
 - {{cssxref("calc-sum")}}
-- {{cssxref("color_value", "&lt;color&gt;")}}
+- {{cssxref("color", "&lt;color&gt;")}}
 - {{cssxref("color-interpolation-method")}}
 - {{cssxref("content-distribution")}}
 - {{cssxref("content-position")}}

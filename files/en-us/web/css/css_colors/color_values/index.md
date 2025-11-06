@@ -125,7 +125,7 @@ The {{domxref("HTMLElement/change_event", "change")}} event is received when the
 
 ### RGB functional notation
 
-RGB (Red/Green/Blue) functional notation, like hexadecimal string notation, represents colors using their red, green, and blue components (and, optionally, an alpha channel component for opacity). However, instead of using a string, the color is defined using the CSS function {{cssxref("color_value/rgb", "rgb()")}}. This function accepts 3 or 4 input parameters — red, green, and blue component values and an optional alpha channel value.
+RGB (Red/Green/Blue) functional notation, like hexadecimal string notation, represents colors using their red, green, and blue components (and, optionally, an alpha channel component for opacity). However, instead of using a string, the color is defined using the CSS function {{cssxref("color/rgb", "rgb()")}}. This function accepts 3 or 4 input parameters — red, green, and blue component values and an optional alpha channel value.
 
 Legal values for each of these parameters are:
 
@@ -137,7 +137,7 @@ Legal values for each of these parameters are:
 
 For example, a bright red that's 50% opaque can be represented as `rgb(255 0 0 / 50%)` or `rgb(100% 0 0 / 0.5)`.
 
-See the {{cssxref("color_value/rgb", "rgb()")}} color function for more information on the RGB functional notation.
+See the {{cssxref("color/rgb", "rgb()")}} color function for more information on the RGB functional notation.
 
 ## Color functions with a hue component
 
@@ -528,11 +528,11 @@ As noted above, when using `rgb()`, `hsl()`, or `hwb()` to output a relative col
 
 ### color-mix() function
 
-The {{cssxref("color_value/color-mix", "color-mix()")}} function takes two color values of any syntax mentioned above, optionally with proportional percent values for each color, and returns the result of mixing them in a given colorspace by a given amount.
+The {{cssxref("color/color-mix", "color-mix()")}} function takes two color values of any syntax mentioned above, optionally with proportional percent values for each color, and returns the result of mixing them in a given colorspace by a given amount.
 
 ### light-dark() function
 
-The {{cssxref("color_value/light-dark", "light-dark()")}} function lets you specify two color values for a property intended for use in light and dark color schemes, respectively. Which one is set depends on whether the developer has set or the user has requested a light or dark color scheme. This is a shortcut function, allowing you to achieve the same results as the {{cssxref("@media/prefers-color-scheme", "prefers-color-scheme")}} media feature query but with less code.
+The {{cssxref("color/light-dark", "light-dark()")}} function lets you specify two color values for a property intended for use in light and dark color schemes, respectively. Which one is set depends on whether the developer has set or the user has requested a light or dark color scheme. This is a shortcut function, allowing you to achieve the same results as the {{cssxref("@media/prefers-color-scheme", "prefers-color-scheme")}} media feature query but with less code.
 
 ## See also
 

@@ -54,8 +54,8 @@ fill: unset;
 - `context-stroke`
   - : Uses the paint value of `stroke` from a context element.
 
-- {{cssxref("color_value", "&lt;color>")}}
-  - : The color of the fill as any valid CSS {{cssxref("color_value", "&lt;color>")}} value.
+- {{cssxref("color", "&lt;color>")}}
+  - : The color of the fill as any valid CSS {{cssxref("color", "&lt;color>")}} value.
 
 - `<url>`
   - : A URL reference to an SVG paint server element, such as a {{SVGElement("linearGradient")}}, {{SVGElement("radialGradient")}}, or {{SVGElement("pattern")}}. The resource reference can optionally be followed by a `<color>` or `none`, which will be used as a fallback if the referenced paint server doesn't resolve.
@@ -248,5 +248,5 @@ The first star has a gradient as a background. The second star uses the fallback
 - Presentation properties: `fill`, {{cssxref("clip-rule")}}, {{cssxref("color-interpolation-filters")}}, {{cssxref("fill-opacity")}}, {{cssxref("fill-rule")}}, {{cssxref("marker-end")}}, {{cssxref("marker-mid")}}, {{cssxref("marker-start")}}, {{cssxref("shape-rendering")}}, {{cssxref("stop-color")}}, {{cssxref("stop-opacity")}}, {{cssxref("stroke")}}, {{cssxref("stroke-dasharray")}}, {{cssxref("stroke-dashoffset")}}, {{cssxref("stroke-linecap")}}, {{cssxref("stroke-linejoin")}}, {{cssxref("stroke-miterlimit")}}, {{cssxref("stroke-opacity")}}, {{cssxref("stroke-width")}}, {{cssxref("text-anchor")}}, and {{cssxref("vector-effect")}}
 - {{cssxref("opacity")}}
 - {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
+- {{cssxref("color", "&lt;color>")}}
 - {{cssxref("basic-shape")}} data type

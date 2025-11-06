@@ -9,7 +9,7 @@ spec-urls:
 sidebar: cssref
 ---
 
-The **`lch()`** functional notation expresses a given color using the LCH {{glossary("color space")}}, which represents lightness, chroma, and hue. It uses the same `L` axis as the {{cssxref("color_value/lab","lab()")}} color function of the [CIELab color space](/en-US/docs/Glossary/Color_space#cielab_color_spaces), but it uses the polar coordinates `C` (Chroma) and `H` (Hue).
+The **`lch()`** functional notation expresses a given color using the LCH {{glossary("color space")}}, which represents lightness, chroma, and hue. It uses the same `L` axis as the {{cssxref("color/lab","lab()")}} color function of the [CIELab color space](/en-US/docs/Glossary/Color_space#cielab_color_spaces), but it uses the polar coordinates `C` (Chroma) and `H` (Hue).
 
 ## Syntax
 
@@ -55,7 +55,7 @@ The parameters are as follows:
   - : A {{CSSXref("&lt;number&gt;")}}, an {{CSSXref("&lt;angle&gt;")}}, or the keyword `none` (equivalent to `0deg`) representing the color's {{CSSXref("&lt;hue&gt;")}} angle.
 
     > [!NOTE]
-    > The angles corresponding to particular hues differ across the sRGB (used by {{CSSXref("color_value/hsl", "hsl()")}} and {{CSSXref("color_value/hwb", "hwb()")}}), CIELAB (used by `lch()`), and Oklab (used by {{CSSXref("color_value/oklch", "oklch()")}}) color spaces. See the [hues in LCH](#hues_in_lch) example below and the {{CSSXref("&lt;hue&gt;")}} reference page for more detail and examples.
+    > The angles corresponding to particular hues differ across the sRGB (used by {{cssxref("color/hsl", "hsl()")}} and {{cssxref("color/hwb", "hwb()")}}), CIELAB (used by `lch()`), and Oklab (used by {{cssxref("color/oklch", "oklch()")}}) color spaces. See the [hues in LCH](#hues_in_lch) example below and the {{CSSXref("&lt;hue&gt;")}} reference page for more detail and examples.
 
 - `A` {{optional_inline}}
   - : An {{CSSXref("&lt;alpha-value&gt;")}} representing the alpha channel value of the color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to 100%. If included, the value is preceded by a slash (`/`).
@@ -436,7 +436,7 @@ and so on.
 
 {{EmbedLiveSample("hues in lch")}}
 
-The hue angles in `lch()` are different from those in {{CSSXref("color_value/hsl", "hsl()")}}. See {{cssxref("hue")}} for more information. In `hsl()`, the sRGB color `0deg` represents red. However, in the CIELab color space, `0deg` corresponds to magenta, while red is approximately `41deg`.
+The hue angles in `lch()` are different from those in {{cssxref("color/hsl", "hsl()")}}. See {{cssxref("hue")}} for more information. In `hsl()`, the sRGB color `0deg` represents red. However, in the CIELab color space, `0deg` corresponds to magenta, while red is approximately `41deg`.
 
 ### Adjusting opacity with lch()
 

@@ -236,7 +236,7 @@ When you want to set multiple declarations or rules based on one media query, a 
 
 A [feature query](/en-US/docs/Web/CSS/CSS_conditional_rules/Using_feature_queries) `<if-test>` can be used to set a value for a property depending on whether the browser supports a particular property value.
 
-For example, the following returns an {{cssxref("color_value/lch()")}} color if `lch()` colors are supported, or an {{cssxref("color_value/rgb()")}} color if not:
+For example, the following returns an {{cssxref("color/lch()")}} color if `lch()` colors are supported, or an {{cssxref("color/rgb()")}} color if not:
 
 ```css-nolint
 color: if(
@@ -288,7 +288,7 @@ padding: if(style(--size: "2xl"): 1em; else: 0.25em);
 
 ### Whole and partial values
 
-An `if()` function can be set as the value of any CSS property, but it can also be used to determine parts of property values. For example, the following sets a different {{cssxref("border-color")}} inside a {{cssxref("border")}} shorthand property, depending on whether {{cssxref("color_value/lch()")}} colors are supported:
+An `if()` function can be set as the value of any CSS property, but it can also be used to determine parts of property values. For example, the following sets a different {{cssxref("border-color")}} inside a {{cssxref("border")}} shorthand property, depending on whether {{cssxref("color/lch()")}} colors are supported:
 
 ```css-nolint
 border: if(

@@ -29,8 +29,8 @@ stop-color: unset;
 
 ### Values
 
-- {{cssxref("color_value", "&lt;color>")}}
-  - : The color of the fill. This can be any valid CSS {{cssxref("color_value", "&lt;color>")}} value.
+- {{cssxref("color", "&lt;color>")}}
+  - : The color of the fill. This can be any valid CSS {{cssxref("color", "&lt;color>")}} value.
 
 ## Formal definition
 
@@ -80,7 +80,7 @@ We have an SVG with three {{SVGElement("rect")}} squares and three {{SVGElement(
 
 #### CSS
 
-We include a {{cssxref("stroke")}} and {{cssxref("stroke-width")}} outlining the rectangle. We define the colors of the first and last stops in each gradient, overriding their `stop-color` attribute values, using the `stop-color` property. Various CSS {{cssxref("color_value", "&lt;color>")}} syntaxes are shown.
+We include a {{cssxref("stroke")}} and {{cssxref("stroke-width")}} outlining the rectangle. We define the colors of the first and last stops in each gradient, overriding their `stop-color` attribute values, using the `stop-color` property. Various CSS {{cssxref("color", "&lt;color>")}} syntaxes are shown.
 
 ```css hidden
 svg {
@@ -140,5 +140,5 @@ rect {
 - Presentation properties: `stop-color`, {{cssxref("clip-rule")}}, {{cssxref("color-interpolation-filters")}}, {{cssxref("fill-opacity")}}, {{cssxref("fill-rule")}}, {{cssxref("fill")}}, {{cssxref("marker-end")}}, {{cssxref("marker-mid")}}, {{cssxref("marker-start")}}, {{cssxref("shape-rendering")}}, {{cssxref("stop-opacity")}}, {{cssxref("stroke")}}, {{cssxref("stroke-dasharray")}}, {{cssxref("stroke-dashoffset")}}, {{cssxref("stroke-linecap")}}, {{cssxref("stroke-linejoin")}}, {{cssxref("stroke-miterlimit")}}, {{cssxref("stroke-opacity")}}, {{cssxref("stroke-width")}}, {{cssxref("text-anchor")}}, and {{cssxref("vector-effect")}}
 - {{cssxref("opacity")}}
 - {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
+- {{cssxref("color", "&lt;color>")}}
 - {{cssxref("basic-shape")}} data type

@@ -48,10 +48,10 @@ The CSS colors module also introduces the {{cssxref("@color-profile")}} at-rule,
   - [`color()`](/en-US/docs/Web/CSS/Reference/Values/color/color)
 - [`color-mix()`](/en-US/docs/Web/CSS/Reference/Values/color/color-mix)
 - [`contrast-color()`](/en-US/docs/Web/CSS/Reference/Values/color/contrast-color)
-- {{CSSXref("color_value/light-dark", "light-dark()")}}
+- {{cssxref("color/light-dark", "light-dark()")}}
 - {{cssxref("dynamic-range-limit-mix()")}}
 
-The CSS color modules also introduce the {{CSSXref("color_value/device-cmyk", "device-cmyk()")}}, `contrast-color()`, and `hdr-color()` functions. Currently, no browsers support these features.
+The CSS color modules also introduce the {{cssxref("color/device-cmyk", "device-cmyk()")}}, `contrast-color()`, and `hdr-color()` functions. Currently, no browsers support these features.
 
 ### Data types
 

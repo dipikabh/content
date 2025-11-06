@@ -29,8 +29,8 @@ lighting-color: unset;
 
 ### Values
 
-- {{cssxref("color_value", "&lt;color>")}}
-  - : The lighting's color. This can be any valid CSS {{cssxref("color_value", "&lt;color>")}} value.
+- {{cssxref("color", "&lt;color>")}}
+  - : The lighting's color. This can be any valid CSS {{cssxref("color", "&lt;color>")}} value.
 
 ## Formal definition
 
@@ -128,6 +128,6 @@ The attributes defined the color of both light filters as `red`, but these value
 - {{cssxref("stroke")}}
 - {{cssxref("flood-opacity")}}
 - {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
+- {{cssxref("color", "&lt;color>")}}
 - {{cssxref("filter-function")}}
 - SVG {{SVGAttr("lighting-color")}} attribute

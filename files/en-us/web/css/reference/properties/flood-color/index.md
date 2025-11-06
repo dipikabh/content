@@ -29,8 +29,8 @@ flood-color: unset;
 
 ### Values
 
-- {{cssxref("color_value", "&lt;color>")}}
-  - : The flood's color. This can be any valid CSS {{cssxref("color_value", "&lt;color>")}} value.
+- {{cssxref("color", "&lt;color>")}}
+  - : The flood's color. This can be any valid CSS {{cssxref("color", "&lt;color>")}} value.
 
 ## Formal definition
 
@@ -116,6 +116,6 @@ The attributes defined the squares as seagreen, but these values were overridden
 - {{cssxref("box-shadow")}}
 - {{cssxref("text-shadow")}}
 - {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
+- {{cssxref("color", "&lt;color>")}}
 - {{cssxref("filter-function")}}
 - SVG {{SVGAttr("flood-color")}} attribute

@@ -89,7 +89,7 @@ The parameters are as follows:
   - : A {{CSSXref("&lt;number&gt;")}}, an {{CSSXref("&lt;angle&gt;")}}, or the keyword `none` (equivalent to `0deg` in this case) representing the color's {{CSSXref("&lt;hue&gt;")}} angle.
 
     > [!NOTE]
-    > The angles corresponding to particular hues differ across the sRGB (used by `hsl()` and {{CSSXref("color_value/hwb", "hwb()")}}), CIELAB (used by {{CSSXref("color_value/lch", "lch()")}}), and Oklab (used by {{CSSXref("color_value/oklch", "oklch()")}}) color spaces. See the {{CSSXref("&lt;hue&gt;")}} reference page for more detail and examples.
+    > The angles corresponding to particular hues differ across the sRGB (used by `hsl()` and {{cssxref("color/hwb", "hwb()")}}), CIELAB (used by {{cssxref("color/lch", "lch()")}}), and Oklab (used by {{cssxref("color/oklch", "oklch()")}}) color spaces. See the {{CSSXref("&lt;hue&gt;")}} reference page for more detail and examples.
 
 - `S`
   - : A {{CSSXref("&lt;percentage&gt;")}} or the keyword `none` (equivalent to `0%` in this case). This value represents the color's saturation. Here `100%` is completely saturated, while `0%` is completely unsaturated (gray).
@@ -102,7 +102,7 @@ The parameters are as follows:
 > See [Missing color components](/en-US/docs/Web/CSS/Reference/Values/color#missing_color_components) for more information on the effect of `none`.
 
 > [!NOTE]
-> Absolute `hsl()` colors are serialized to {{CSSXref("color_value/rgb", "rgb()")}} values. The values of the red, green, and blue components may be rounded in serialization.
+> Absolute `hsl()` colors are serialized to {{cssxref("color/rgb", "rgb()")}} values. The values of the red, green, and blue components may be rounded in serialization.
 
 #### Relative value syntax
 

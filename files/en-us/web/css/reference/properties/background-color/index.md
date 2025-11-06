@@ -112,7 +112,7 @@ Color contrast ratio is determined by comparing the luminance of the text and ba
 
 ### Colorize boxes
 
-This example demonstrates the applying `background-color` to HTML {{HTMLelement("div")}} elements using different CSS {{cssxref("color_value", "&lt;color&gt;")}} values.
+This example demonstrates the applying `background-color` to HTML {{HTMLelement("div")}} elements using different CSS {{cssxref("color", "&lt;color&gt;")}} values.
 
 #### HTML
 

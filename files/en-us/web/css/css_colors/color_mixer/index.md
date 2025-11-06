@@ -5,7 +5,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-This tool lets you mix two colors in any color space using the {{cssxref("color_value/color-mix")}} function and copy the resulting color in any CSS color format.
+This tool lets you mix two colors in any color space using the {{cssxref("color/color-mix")}} function and copy the resulting color in any CSS color format.
 
 The two input colors, `color-one` and `color-two`, are shown on the outside, and the mixed color returned by the function is shown in the middle. Click the outer swatches to select new colors to mix. Use the sliders to change the percentages of each input color included in the mix. Use the drop-down menu to change the color space of the function's output. The resulting color's values in different formats appear in a table following the widget and can be copied. You can also click a color format name to learn more about it.
 

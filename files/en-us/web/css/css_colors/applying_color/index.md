@@ -144,7 +144,7 @@ Within our wrapper, we have a left box and a right box.
 
 The `.boxLeft` class, used to style the box on the left, sets up the color of the background and the outline:
 
-- The box's background color is set by changing the value of the CSS {{cssxref("background-color")}} property to `rgb(245 130 130)`, using the {{CSSXref("color_value/rgb", "rgb()")}} functional notation.
+- The box's background color is set by changing the value of the CSS {{cssxref("background-color")}} property to `rgb(245 130 130)`, using the {{cssxref("color/rgb", "rgb()")}} functional notation.
 - An outline is defined for the box. Unlike the more commonly used {{cssxref("border")}}, {{cssxref("outline")}} doesn't affect layout at all; it draws over the top of whatever may happen to be outside the element's box instead of making room as `border` does. This outline is a solid, dark red line that's two pixels thick. Note the use of the `darkred` keyword when specifying the color.
 - Notice that we're not explicitly setting the text color. That means the value of {{cssxref("color")}} will be inherited from the nearest containing element that defines it. By default, that's black.
 
@@ -166,9 +166,9 @@ The `.boxLeft` class, used to style the box on the left, sets up the color of th
 
 Finally, the `.boxRight` class sets several styles on the box that's drawn to the right. Then the following colors are established (using five different ways of declaring [color values](/en-US/docs/Web/CSS/CSS_colors/Color_values)):
 
-- The `background-color` is set using {{CSSXref("color_value/hwb", "hwb()")}} functional notation — `hwb(270deg 63% 13%)`. This is a medium purple color.
+- The `background-color` is set using {{cssxref("color/hwb", "hwb()")}} functional notation — `hwb(270deg 63% 13%)`. This is a medium purple color.
 - The box's `outline` is used to specify that the box should be enclosed in a four-pixel thick dashed line whose color is a somewhat deeper purple using the six-digit {{cssxref("hex-color")}} `#6e1478`.
-- The foreground (text) color is specified by setting the {{cssxref("color")}} property using {{CSSXref("color_value/hsl", "hsl()")}} functional notation — `hsl(0deg 95% 95%)`. This is a very light pinkish color.
+- The foreground (text) color is specified by setting the {{cssxref("color")}} property using {{cssxref("color/hsl", "hsl()")}} functional notation — `hsl(0deg 95% 95%)`. This is a very light pinkish color.
 - We add a green wavy line under the text with the {{cssxref("text-decoration")}} shorthand, along with the longhand component for browser compatibility. We used the 3-digit {{cssxref("hex-color")}} `#8f8`, which is the equivalent of `#88ff88`.
 - Finally, a bit of a shadow is added to the text using {{cssxref("text-shadow")}}. Its `color` parameter is set to `black`, a {{cssxref("named-color")}} value.
 

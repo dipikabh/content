@@ -17,7 +17,7 @@ Oklab is a perceptual color space and is useful to:
 - Modify the saturation of colors, while keeping user perception of hue and lightness
 - Create smooth and uniform gradients of colors (when interpolated manually, for example, in a {{HTMLElement("canvas")}} element).
 
-`oklab()` works with a Cartesian coordinate system on the Oklab color space — a- and b-axes. It can represent a wider range of colors than RGB, including wide-gamut and P3 colors. If you want a polar color system, chroma and hue, use {{cssxref("color_value/oklch", "oklch()")}}.
+`oklab()` works with a Cartesian coordinate system on the Oklab color space — a- and b-axes. It can represent a wider range of colors than RGB, including wide-gamut and P3 colors. If you want a polar color system, chroma and hue, use {{cssxref("color/oklch", "oklch()")}}.
 
 ## Syntax
 
@@ -480,7 +480,7 @@ The output is as follows:
 ## See also
 
 - The [`<color>` data type](/en-US/docs/Web/CSS/Reference/Values/color) for a list of all color notations
-- {{cssxref("color_value/lab","lab()")}} and {{cssxref("color_value/oklch","oklch()")}} color functions
+- {{cssxref("color/lab","lab()")}} and {{cssxref("color/oklch","oklch()")}} color functions
 - [Using relative colors](/en-US/docs/Web/CSS/CSS_colors/Relative_colors)
 - [CSS colors](/en-US/docs/Web/CSS/CSS_colors) module
 - [A perceptual color space for image processing](https://bottosson.github.io/posts/oklab/) on bottosson.github.io (2023)

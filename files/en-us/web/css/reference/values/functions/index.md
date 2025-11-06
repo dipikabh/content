@@ -184,31 +184,31 @@ The {{CSSxRef("&lt;filter-function&gt;")}} CSS [data type](/en-US/docs/Web/CSS/R
 
 ## Color functions
 
-The {{CSSxRef("color_value","&lt;color&gt;")}} CSS [data type](/en-US/docs/Web/CSS/Reference/Values/Data_types) specifies different color representations.
+The {{cssxref("color","&lt;color&gt;")}} CSS [data type](/en-US/docs/Web/CSS/Reference/Values/Data_types) specifies different color representations.
 
-- {{CSSxRef("color_value/rgb", "rgb()")}}
+- {{cssxref("color/rgb", "rgb()")}}
   - : Defines a given color according to its red, green, blue and alpha (transparency) components.
-- {{CSSxRef("color_value/hsl", "hsl()")}}
+- {{cssxref("color/hsl", "hsl()")}}
   - : Defines a given color according to its hue, saturation, lightness and alpha (transparency) components.
-- {{CSSxRef("color_value/hwb", "hwb()")}}
+- {{cssxref("color/hwb", "hwb()")}}
   - : Defines a given color according to its hue, whiteness and blackness components.
-- {{CSSxRef("color_value/lch", "lch()")}}
+- {{cssxref("color/lch", "lch()")}}
   - : Defines a given color according to its lightness, chroma and hue components.
-- {{CSSxRef("color_value/oklch", "oklch()")}}
+- {{cssxref("color/oklch", "oklch()")}}
   - : Defines a given color according to its lightness, chroma, hue and alpha (transparency) components.
-- {{CSSxRef("color_value/lab", "lab()")}}
+- {{cssxref("color/lab", "lab()")}}
   - : Defines a given color according to its lightness, a-axis distance and b-axis distance in the Lab colorspace.
-- {{CSSxRef("color_value/oklab", "oklab()")}}
+- {{cssxref("color/oklab", "oklab()")}}
   - : Defines a given color according to its lightness, a-axis distance, b-axis distance in the Lab colorspace and alpha (transparency).
-- {{CSSxRef("color_value/color", "color()")}}
+- {{cssxref("color/color", "color()")}}
   - : Specifies a particular, specified colorspace rather than the implicit sRGB colorspace.
-- {{CSSxRef("color_value/color-mix", "color-mix()")}}
+- {{cssxref("color/color-mix", "color-mix()")}}
   - : Mixes two color values in a given colorspace by a given amount.
-- {{CSSxRef("color_value/contrast-color", "contrast-color()")}}
+- {{cssxref("color/contrast-color", "contrast-color()")}}
   - : Returns a color with maximum color contrast for a given color.
-- {{CSSxRef("color_value/device-cmyk", "device-cmyk()")}}
+- {{cssxref("color/device-cmyk", "device-cmyk()")}}
   - : Defines CMYK colors in a device-dependent way.
-- {{CSSXref("color_value/light-dark", "light-dark()")}}
+- {{cssxref("color/light-dark", "light-dark()")}}
   - : Returns one of two provided colors based on the current color scheme.
 - {{cssxref("dynamic-range-limit-mix()")}}
   - : Creates a custom maximum luminance limit that is a mix of different {{cssxref("dynamic-range-limit")}} keywords in specified percentages.
@@ -384,17 +384,17 @@ The following functions return an integer value based on the DOM tree, rather th
 - {{cssxref("calc-size")}} {{experimental_inline}}
 - {{cssxref("basic-shape/circle", "circle()")}}
 - {{cssxref("clamp")}}
-- {{cssxref("color_value/color", "color()")}}
-- {{cssxref("color_value/color-mix", "color-mix()")}}
+- {{cssxref("color/color", "color()")}}
+- {{cssxref("color/color-mix", "color-mix()")}}
 - {{cssxref("gradient/conic-gradient", "conic-gradient()")}}
 - {{cssxref("filter-function/contrast", "contrast()")}}
-- {{cssxref("color_value/contrast-color", "contrast-color()")}} {{experimental_inline}}
+- {{cssxref("color/contrast-color", "contrast-color()")}} {{experimental_inline}}
 - {{cssxref("cos")}}
 - {{cssxref("counter")}}
 - {{cssxref("counters")}}
 - {{cssxref("cross-fade")}}
 - {{cssxref("easing-function/cubic-bezier", "cubic-bezier()")}}
-- {{cssxref("color_value/device-cmyk", "device-cmyk()")}}
+- {{cssxref("color/device-cmyk", "device-cmyk()")}}
 - {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
 - {{cssxref("dynamic-range-limit-mix")}} {{experimental_inline}}
 - {{cssxref("element")}} {{experimental_inline}}
@@ -403,19 +403,19 @@ The following functions return an integer value based on the DOM tree, rather th
 - {{cssxref("exp")}}
 - {{cssxref("fit-content_function")}}
 - {{cssxref("filter-function/grayscale", "grayscale()")}}
-- {{cssxref("color_value/hsl", "hsl()")}}
+- {{cssxref("color/hsl", "hsl()")}}
 - {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}
-- {{cssxref("color_value/hwb", "hwb()")}}
+- {{cssxref("color/hwb", "hwb()")}}
 - {{cssxref("hypot")}}
 - {{cssxref("if")}} {{experimental_inline}}
 - {{cssxref("image/image", "image()")}}
 - {{cssxref("image/image-set", "image-set()")}}
 - {{cssxref("basic-shape/inset", "inset()")}}
 - {{cssxref("filter-function/invert", "invert()")}}
-- {{cssxref("color_value/lab", "lab()")}}
+- {{cssxref("color/lab", "lab()")}}
 - {{cssxref("@import/layer_function", "layer()")}}
-- {{cssxref("color_value/lch", "lch()")}}
-- {{cssxref("color_value/light-dark", "light-dark()")}}
+- {{cssxref("color/lch", "lch()")}}
+- {{cssxref("color/light-dark", "light-dark()")}}
 - {{cssxref("easing-function/linear", "linear()")}}
 - {{cssxref("gradient/linear-gradient", "linear-gradient()")}}
 - {{cssxref("log")}}
@@ -425,8 +425,8 @@ The following functions return an integer value based on the DOM tree, rather th
 - {{cssxref("min")}}
 - {{cssxref("minmax")}}
 - {{cssxref("mod")}}
-- {{cssxref("color_value/oklab", "oklab()")}}
-- {{cssxref("color_value/oklch", "oklch()")}}
+- {{cssxref("color/oklab", "oklab()")}}
+- {{cssxref("color/oklch", "oklch()")}}
 - {{cssxref("filter-function/opacity", "opacity()")}}
 - {{cssxref("image/paint", "paint()")}}
 - {{cssxref("font-palette/palette-mix", "palette-mix()")}}
@@ -443,7 +443,7 @@ The following functions return an integer value based on the DOM tree, rather th
 - {{cssxref("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}}
 - {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}
 - {{cssxref("gradient/repeating-radial-gradient", "repeating-radial-gradient())}}
-- {{cssxref("color_value/rgb", "rgb()")}}
+- {{cssxref("color/rgb", "rgb()")}}
 - {{cssxref("transform-function/rotate", "rotate()")}}
 - {{cssxref("transform-function/rotate3d", "rotate3d()")}}
 - {{cssxref("transform-function/rotatex", "rotatex()")}}
