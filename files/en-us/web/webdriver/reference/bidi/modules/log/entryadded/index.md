@@ -11,7 +11,7 @@ The `log.entryAdded` [event](/en-US/docs/Web/WebDriver/Reference/BiDi/Modules#ev
 
 ## Event data
 
-The `params` field in the event notification is a log entry object. Based on the source of the log, the log entry object has different types: `"console"`, `"javascript"`, or any other string. Each type may provide additional fields specific to that source.
+The `params` field in the event notification is a log entry object. Based on the source of the log, the log entry object has different types: `"console"` or `"javascript"`. Each type may provide additional fields specific to that source.
 
 ### Common fields
 
@@ -34,21 +34,21 @@ All log entry objects include the following fields:
 - `stackTrace` {{optional_inline}}
   - : An object with a `callFrames` array that represents the [JavaScript stack](/en-US/docs/Web/WebDriver/Reference/BiDi/Modules/script/stackTrace) at the point the entry was created. Each item in the array is a stack frame with the following fields: `columnNumber`, `functionName`, `lineNumber`, and `url`.
 - `text`
-  - : A string that contains the log message, or `null` if not available.
+  - : A string that contains the log message or `null` if not available. For console entries, it is the concatenation of all stringified arguments joined by spaces, and for JavaScript errors, it is generally the error message.
+    The exact format is browser-dependent, so don't rely on this value for assertions in tests.
 - `timestamp`
   - : A non-negative integer that represents the time when the log entry was created, in UTC, as milliseconds elapsed since the epoch ({{jsxref("Date.now()")}}).
 - `type`
   - : A string that identifies the source of the log entry. It has one of the following values:
     - `"console"`: Indicates that the log entry was generated from a call to a console API method (for example, {{domxref("console/log_static", "console.log()")}}, {{domxref("console/warn_static", "console.warn()")}}). Log entry objects of this type include [additional fields](#console-entry-fields).
     - `"javascript"`: Indicates that the log entry was generated from an unhandled JavaScript error.
-    - Any other string: Indicates an implementation-defined log source.
 
 ### `"console"` log entry fields
 
 In addition to the [common fields](#common-fields), log entry objects with `"type": "console"` also include:
 
 - `args`
-  - : An array of objects that represent the arguments passed to the console method. Each object has a `type` field and a `value` field.
+  - : An array of objects that represent the arguments passed to the console method. Each object has a `type` field and optional `value`, `handle`, and `internalId` fields.
 - `method`
   - : A string that contains the name of the console method that was called (for example, `"log"`, `"error"`, `"assert"`, `"debug"`, `"trace"`, `"warn"`).
 
@@ -56,7 +56,7 @@ In addition to the [common fields](#common-fields), log entry objects with `"typ
 
 ### Receiving an event for a console log
 
-With a [WebDriver BiDi connection](/en-US/docs/Web/WebDriver/How_to/Create_BiDi_connection) and a [subscription](/en-US/docs/Web/WebDriver/Reference/BiDi/Modules/session/subscribe) to `log.entryAdded` active, the browser sends a `log.entryAdded` event when a script evaluates `console.log("hello", "world")`:
+With a [WebDriver BiDi connection](/en-US/docs/Web/WebDriver/How_to/Create_BiDi_connection) and a [subscription](/en-US/docs/Web/WebDriver/Reference/BiDi/Modules/session/subscribe) to `log.entryAdded` active, the browser sends a `log.entryAdded` event when a script evaluates `console.log("hello", [1, 2, 3])`:
 
 ```json
 {
@@ -75,13 +75,27 @@ With a [WebDriver BiDi connection](/en-US/docs/Web/WebDriver/How_to/Create_BiDi_
         "value": "hello"
       },
       {
-        "type": "string",
-        "value": "world"
+        "type": "array",
+        "value": [
+          { "type": "number", "value": 1 },
+          { "type": "number", "value": 2 },
+          { "type": "number", "value": 3 }
+        ]
       }
     ],
     "level": "info",
-    "text": "hello world",
-    "timestamp": 1712345678901
+    "text": "hello 1,2,3",
+    "timestamp": 1712345678901,
+    "stackTrace": {
+      "callFrames": [
+        {
+          "columnNumber": 8,
+          "functionName": "",
+          "lineNumber": 1,
+          "url": "https://example.com/app.js"
+        }
+      ]
+    }
   }
 }
 ```
@@ -109,7 +123,17 @@ With a [WebDriver BiDi connection](/en-US/docs/Web/WebDriver/How_to/Create_BiDi_
     ],
     "level": "warn",
     "text": "something went wrong",
-    "timestamp": 1712345678950
+    "timestamp": 1712345678950,
+    "stackTrace": {
+      "callFrames": [
+        {
+          "columnNumber": 8,
+          "functionName": "",
+          "lineNumber": 1,
+          "url": "https://example.com/app.js"
+        }
+      ]
+    }
   }
 }
 ```
