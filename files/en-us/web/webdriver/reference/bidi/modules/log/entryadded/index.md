@@ -48,7 +48,7 @@ All log entry objects include the following fields:
 In addition to the [common fields](#common-fields), log entry objects with `"type": "console"` also include:
 
 - `args`
-  - : An array of objects that represent the arguments passed to the console method. Each object has a `type` field and optional `value`, `handle`, and `internalId` fields.
+  - : An array of objects that represent the arguments passed to the console method. Each object has a `type` field (such as `"string"`, `"number"`, `"boolean"`, or `"array"`) and optional `value`, `handle`, and `internalId` fields.
 - `method`
   - : A string that contains the name of the console method that was called (for example, `"log"`, `"error"`, `"assert"`, `"debug"`, `"trace"`, `"warn"`).
 
@@ -56,7 +56,7 @@ In addition to the [common fields](#common-fields), log entry objects with `"typ
 
 ### Receiving an event for a console log
 
-With a [WebDriver BiDi connection](/en-US/docs/Web/WebDriver/How_to/Create_BiDi_connection) and a [subscription](/en-US/docs/Web/WebDriver/Reference/BiDi/Modules/session/subscribe) to `log.entryAdded` active, the browser sends a `log.entryAdded` event when a script evaluates `console.log("hello", [1, 2, 3])`:
+With a [WebDriver BiDi connection](/en-US/docs/Web/WebDriver/How_to/Create_BiDi_connection) and a [subscription](/en-US/docs/Web/WebDriver/Reference/BiDi/Modules/session/subscribe) to `log.entryAdded` active, the browser sends a `log.entryAdded` event when a script evaluates `console.log("hello", [1, true, "foo"])`:
 
 ```json
 {
@@ -78,13 +78,13 @@ With a [WebDriver BiDi connection](/en-US/docs/Web/WebDriver/How_to/Create_BiDi_
         "type": "array",
         "value": [
           { "type": "number", "value": 1 },
-          { "type": "number", "value": 2 },
-          { "type": "number", "value": 3 }
+          { "type": "boolean", "value": true },
+          { "type": "string", "value": "foo" }
         ]
       }
     ],
     "level": "info",
-    "text": "hello 1,2,3",
+    "text": "hello 1,true,foo",
     "timestamp": 1712345678901,
     "stackTrace": {
       "callFrames": [
